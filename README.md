@@ -1,4 +1,17 @@
-<h1></h1>
+<h1>AWS CLOUD CLUB - WEB</h1>
+
+<P>Nesse Readme tem informações sobre o projeto.
+
+O projeto usara:
+
+(   *Js, Html, Css, Vercel, Gemini CLI, Supabase, Git & Github.*    )
+
+Em arquivos importantes tem o desing que será seguido no projeto, junto tem o link do drive com a pasta dos icons usados no figma.
+
+Data estimada para o deploy: Dia 17 ou até 20.
+Documentação disponivel em breve.
+
+**Fique atento aos issue!**
 
 <h1>Arquivos importantes:</h1>
 
