@@ -1,0 +1,220 @@
+/* ========================================
+   VARIÁVEIS CSS
+======================================== */
+:root {
+    --color-primary: #9862DA;
+    --color-black: #000000;
+    --color-white: #ffffff;
+
+    --spacing-xs: 6px;
+    --spacing-sm: 10px;
+    --spacing-md: 20px;
+    --spacing-lg: 30px;
+    --spacing-xl: 90px;
+    --spacing-2xl: 100px;
+
+    --font-size-base: 16px;
+    --font-size-md: 20px;
+    --font-size-lg: 28px;
+    --font-size-xl: 48px;
+
+    --transition-default: all 0.3s ease;
+    --border-radius-pill: 50px;
+}
+
+.container {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.menu-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-lg) 0;
+    font-size: var(--font-size-md);
+}
+
+.menu-navbar ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-navbar a {
+    text-decoration: none;
+    color: var(--color-black);
+    transition: color 0.3s ease;
+}
+
+.menu-navbar a:hover {
+    color: var(--color-primary);
+}
+
+#inicio {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: center;
+    padding: var(--spacing-md);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.header-content .loader {
+    color: rgb(124, 124, 124);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 8px;
+}
+
+.header-content .words {
+    overflow: hidden;
+    position: relative;
+}
+
+.header-content .words::after {
+    content: none;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#111 10%,
+            transparent 30%,
+            transparent 70%,
+            #111 90%);
+    z-index: 20;
+}
+
+.header-content .word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #956afa;
+    animation: spin_4991 4s infinite;
+}
+
+@keyframes spin_4991 {
+    10% {
+        transform: translateY(-102%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    35% {
+        transform: translateY(-202%);
+    }
+
+    50% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-302%);
+    }
+
+    75% {
+        transform: translateY(-300%);
+    }
+
+    85% {
+        transform: translateY(-402%);
+    }
+
+    100% {
+        transform: translateY(-400%);
+    }
+}
+
+
+.button-meetup {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    background-color: transparent;
+    border: 2px solid var(--color-black);
+    border-radius: var(--border-radius-pill);
+    padding: var(--spacing-xs) 4px;
+    margin-top: var(--spacing-md);
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--color-black);
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition-default);
+}
+
+.button-meetup:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.button-meetup img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    transition: filter 0.3s ease;
+}
+
+.button-meetup:hover img {
+    filter: brightness(0) invert(1);
+}
+
+.button-meetup span {
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-xs) 4px;
+}
+
+.social-links img {
+    width: 60px;
+    height: 60px;
+    transition: filter 0.3s ease;
+}
+
+.icon-club {
+    text-align: left;
+}
+
+.icon-club img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    padding-top: var(--spacing-sm);
+}
+
+.icon-aws {
+    text-align: right;
+}
+
+.icon-aws img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    padding-top: var(--spacing-sm);
+}
