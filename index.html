@@ -1,196 +1,256 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AWS Cloud Club - Sul Americana</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
+    <link rel="icon" href="Elements - AWS Club/LogoClub_SA.png" />
+
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="icon" href="Elements - AWS Club/LogoClub_SA.png">
+</head>
 
 <body>
-
-    <header>
-        <div class="menu-navbar">
-            <nav>
+    <header class="site-header">
+        <div class="container navbar-container">
+            <div class="logo">
+                <img src="Elements - AWS Club/LogoClub_RGB_WHT-removebg-preview.png" alt="AWS Cloud Club" />
+            </div>
+            <nav class="menu-navbar">
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#inicio">Início</a></li>
                     <li><a href="#eventos">Eventos</a></li>
-                    <li><a href="#fotos">Fotos</a></li>
+                    <li><a href="#https://drive.google.com/drive/folders/1fp-YN_jy_yxm97YVFnIQlRw-cB8nbUXM?usp=drive_link"
+                            target="_blank">Fotos</a></li>
                     <li><a href="#feedback">Feedback</a></li>
                     <li><a href="#organizadores">Organizadores</a></li>
-                    <li><a href="#FAQ">FAQ</a></li>
+                    <li><a href="#faq">FAQ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section id="inicio">
-        <div class="header-content">
-            <div class="loader">
-                <p>Bem-vindo ao Club!</p>
-                <div class="words">
-                    <span class="word">Estude AWS</span>
-                    <span class="word">Conecte-se</span>
-                    <span class="word">Construa projetos</span>
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
+                <div class="header-content">
+                    <h1 class="hero-title">AWS Cloud Club - Sul Americana</h1>
+
+                    <div class="loader">
+                        <p>Bem-vindo ao Club!</p>
+                        <div class="words">
+                            <span class="word">Estude AWS</span>
+                            <span class="word">Conecte-se</span>
+                            <span class="word">Construa projetos</span>
+                            <span class="word">Lidere comunidade</span>
+                        </div>
+                    </div>
+
+                    <p class="header-subtitle">
+                        Junte-se à nossa comunidade de estudantes apaixonados por cloud.<br />
+                        Aprenda, conecte-se e cresça com conteúdos e eventos AWS.
+                    </p>
+
+                    <a class="button-meetup" target="_blank"
+                        href="https://www.meetup.com/aws-cloud-club-at-faculdade-sul-americana/?utm_medium=referral&utm_campaign=groupHome&utm_source=twitter&utm_version=v2&member_id=457819122">
+                        <img src="Elements - AWS Club/meetup.png" alt="Meetup" />
+                        <span>Ver próximos eventos</span>
+                    </a>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/110336050" target="_blank">
+                            <img src="Elements - AWS Club/linkedin_RGB.png" alt="LinkedIn" />
+                        </a>
+                        <a href="https://www.instagram.com/cloudclub_sa" target="_blank">
+                            <img src="Elements - AWS Club/instagram_RGB.png" alt="Instagram" />
+                        </a>
+                        <a href="#" target="_blank">
+                            <img src="Elements - AWS Club/whatsapp_RGB.png" alt="WhatsApp" />
+                        </a>
+                        <a href="https://discord.gg/6hVSyJSV" target="_blank">
+                            <img src="Elements - AWS Club/discord_RGB.png" alt="Discord" />
+                        </a>
+                    </div>
                 </div>
+
+                <aside class="hero-aside">
+                    <img src="Elements - AWS Club/Cloud_Club.png" alt="Logo Cloud Club" class="hero-image" />
+                </aside>
             </div>
+        </section>
 
-            <p class="header-subtitle">
-                Junte-se à nossa comunidade de estudantes apaixonados por cloud.<br>
-                Aprenda, conecte-se e cresça com conteúdos AWS!
-            </p>
-        </div>
+        <section id="eventos" class="section">
+            <div class="container">
+                <h2 class="section-title">Próximos eventos</h2>
 
-
-        <aside>
-            <div class="icon-Club">
-                <a>
-                    <img src="Elements - AWS Club/Cloud_Club.png" alt="icon-Club">
-                </a>
-            </div>
-        </aside>
-
-        <div class="social-links">
-            <a href="" target="_blank">
-                <img src="Elements - AWS Club/linkedin.png" alt="LinkedIn">
-            </a>
-            <a href="" target="_blank">
-                <img src="Elements - AWS Club/instagram.png" alt="instagram">
-            </a>
-            <a href="" target="_blank">
-                <img src="Elements - AWS Club/whatsapp.png" alt="WhatsApp">
-            </a>
-            <a href="" target="_blank">
-                <img src="Elements - AWS Club/discord.png" alt="Discord">
-            </a>
-        </div>
-
-        <a class="button-meetup"
-            href="https://www.meetup.com/aws-cloud-club-at-faculdade-sul-americana/?utm_medium=referral&utm_campaign=groupHome&utm_source=twitter&utm_version=v2&member_id=457819122"
-            target="_blank" rel="noopener noreferrer">
-            <img src="Elements - AWS Club/link.svg" alt="Ícone de link">
-            <span>Entre na comunidade do Meetup.</span>
-            <img src="Elements - AWS Club/meetup.png" alt="icone do meetup">
-        </a>
-    </section>
-
-    <section id="eventos">
-    </section>
-
-    <section id="Organizadores">
-        <div class="organizers-container">
-            <h2 class="section-title">Organizadores:</h2>
-
-            <div class="carousel-wrapper">
-                <button class="arrow-btn prev" aria-label="Anterior">❮</button>
-
-                <div class="cards-grid" id="organizersGrid">
-                    <article class="organizer-card">
-                        <div class="profile-image">
-                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQHctJ_OkV0J7Q/profile-displayphoto-crop_800_800/B4DZq8bcVAIMAI-/0/1764097902832?e=1767225600&v=beta&t=QF9mHWBCJgbYM-nA2Isi4DYcKjOE4ruymFkCAyQnLt0"
-                                alt="Foto de perfil do Ricardo">
+                <div class="events-grid">
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">JAN</span>
                         </div>
-                        <div class="card-info">
-                            <h3>Ricardo Neres</h3>
-                            <span class="role-club">Capitão / Líder</span>
-                            <span class="role-pro">Software Engineer Kotlin & Java<br>@Irly</span>
+                        <div class="event-info">
+                            <h3>AWS Cloud Meetup Goiânia</h3>
+                            <p>Presencial • Faculdade Sul-Americana</p>
+                            <p>18h30 – Networking, palestras e hands-on.</p>
+                            <a href="#" class="event-cta">Ver detalhes</a>
                         </div>
                     </article>
 
-                    <article class="organizer-card">
-                        <div class="profile-image">
-                            <img src="http://github.com/luk3skyw4lker.png" alt="Foto de perfil do Lucas">
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">JAN</span>
                         </div>
-                        <div class="card-info">
-                            <h3>Lucas Botelho Lemos</h3>
-                            <span class="role-club">Co-organizador</span>
-                            <span class="role-pro">Software Engineer Golang & JavaScript<br>@Embroker</span>
-                        </div>
-                    </article>
-
-                    <article class="organizer-card">
-                        <div class="profile-image">
-                            <img src="https://github.com/Printf-PedroCardoso.png" alt="Foto de perfil do Pedro">
-                        </div>
-                        <div class="card-info">
-                            <h3>Pedro Cardoso da Mata</h3>
-                            <span class="role-club">Desenvolvedor</span>
-                            <span class="role-pro">Software Engineer<br>@Decisão Sistemas</span>
+                        <div class="event-info">
+                            <h3>AWS Cloud Meetup Goiânia</h3>
+                            <p>Presencial • Faculdade Sul-Americana</p>
+                            <p>18h30 – Networking, palestras e hands-on.</p>
+                            <a href="#" class="event-cta">Ver detalhes</a>
                         </div>
                     </article>
 
-                    <article class="organizer-card">
-                        <div class="profile-image">
-                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQG2H-A8fqineA/profile-displayphoto-shrink_800_800/B4DZgKKQVlHwAc-/0/1752517120972?e=1767225600&v=beta&t=VlWLTGNiwk-lj5uhDhEkpPsVcG0ZLW5i7kjUfOBewqs"
-                                alt="Foto de perfil da Jéssica">
+                    <article class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">JAN</span>
                         </div>
-                        <div class="card-info">
-                            <h3>Jéssica Beatriz Canuto</h3>
-                            <span class="role-club">Marketing</span>
-                            <span class="role-pro">Estagiária em infraestrutura<br>@Sanax</span>
-                        </div>
-                    </article>
-
-                    <article class="organizer-card">
-                        <div class="profile-image">
-                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGZGc4uM95Iig/profile-displayphoto-shrink_800_800/B4DZXfdKGIHAAc-/0/1743210718515?e=1767225600&v=beta&t=_NC97u-FMzdIpXnY8jggz5N_XVrCzYGor0dPXtj_Gt8"
-                                alt="Foto de perfil Thaysa">
-                        </div>
-                        <div class="card-info">
-                            <h3>Thaysa Larissa</h3>
-                            <span class="role-club">Captação de recursos</span>
-                            <span class="role-pro">Supervirora de TI<br>@Soluti</span>
+                        <div class="event-info">
+                            <h3>AWS Cloud Meetup Goiânia</h3>
+                            <p>Presencial • Faculdade Sul-Americana</p>
+                            <p>18h30 – Networking, palestras e hands-on.</p>
+                            <a href="#" class="event-cta">Ver detalhes</a>
                         </div>
                     </article>
                 </div>
+            </div>
+        </section>
 
-                <button class="arrow-btn next" aria-label="Próximo">❯</button>
+        <section id="organizadores" class="section">
+            <div class="container organizers-container">
+                <h2 class="section-title">Organizadores</h2>
+
+                <div class="carousel-wrapper">
+                    <button class="arrow-btn prev" aria-label="Anterior">❮</button>
+
+                    <div class="cards-grid" id="organizersGrid">
+                        <article class="organizer-card">
+                            <div class="profile-image">
+                                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHctJ_OkV0J7Q/profile-displayphoto-crop_800_800/B4DZq8bcVAIMAI-/0/1764097902832?e=1767225600&v=beta&t=QF9mHWBCJgbYM-nA2Isi4DYcKjOE4ruymFkCAyQnLt0"
+                                    alt="Ricardo" />
+                            </div>
+                            <div class="card-info">
+                                <h3>Ricardo Neres</h3>
+                                <span class="role-club">Capitão / Líder</span>
+                                <span class="role-pro">Software Engineer Kotlin &amp; Java<br />@Irly</span>
+                            </div>
+                        </article>
+
+                        <article class="organizer-card">
+                            <div class="profile-image">
+                                <img src="https://github.com/luk3skyw4lker.png" alt="Lucas" />
+                            </div>
+                            <div class="card-info">
+                                <h3>Lucas Lemos</h3>
+                                <span class="role-club">Co-organizador</span>
+                                <span class="role-pro">Software Engineer Golang &amp; JavaScript<br />@Embroker</span>
+                            </div>
+                        </article>
+
+                        <article class="organizer-card">
+                            <div class="profile-image">
+                                <img src="https://github.com/Printf-PedroCardoso.png" alt="Pedro" />
+                            </div>
+                            <div class="card-info">
+                                <h3>Pedro Cardoso da Mata</h3>
+                                <span class="role-club">Desenvolvedor</span>
+                                <span class="role-pro">Software Engineer<br />@Decisão Sistemas</span>
+                            </div>
+                        </article>
+
+                        <article class="organizer-card">
+                            <div class="profile-image">
+                                <img src="https://media.licdn.com/dms/image/v2/D4D03AQG2H-A8fqineA/profile-displayphoto-shrink_800_800/B4DZgKKQVlHwAc-/0/1752517120972?e=1767225600&v=beta&t=VlWLTGNiwk-lj5uhDhEkpPsVcG0ZLW5i7kjUfOBewqs"
+                                    alt="Jéssica Canuto" />
+                            </div>
+                            <div class="card-info">
+                                <h3>Jéssica Beatriz Canuto</h3>
+                                <span class="role-club">Marketing</span>
+                                <span class="role-pro">Estagiária em infraestrutura<br />@Sanax</span>
+                            </div>
+                        </article>
+
+                        <article class="organizer-card">
+                            <div class="profile-image">
+                                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGZGc4uM95Iig/profile-displayphoto-shrink_800_800/B4DZXfdKGIHAAc-/0/1743210718515?e=1767225600&v=beta&t=_NC97u-FMzdIpXnY8jggz5N_XVrCzYGor0dPXtj_Gt8"
+                                    alt="Thaysa Estanislau" />
+                            </div>
+                            <div class="card-info">
+                                <h3>Thaysa Larissa</h3>
+                                <span class="role-club">Captação de recursos</span>
+                                <span class="role-pro">Supervisora de TI<br />@Soluti</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <button class="arrow-btn next" aria-label="Próximo">❯</button>
+                </div>
+
+                <div class="dots-container" id="dotsContainer"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-info">
+                <p>&copy; 2025 AWS Cloud Club - Sul Americana</p>
+                <p>Desenvolvido por Ricardo Neres &amp; Pedro Cardoso</p>
             </div>
 
-            <div class="dots-container" id="dotsContainer"></div>
+            <div class="footer-links">
+                <a href="#inicio">Início</a>
+                <a href="#eventos">Eventos</a>
+                <a href="#organizadores">Organizadores</a>
+                <a href="#admin" id="admin-link">admin</a>
+            </div>
+
+
+
+            <div id="admin-modal" class="modal-overlay">
+                <div class="modal">
+                    <button class="modal-close" id="close-modal">&times;</button>
+                    <h2>Área do organizador</h2>
+                    <form class="admin-form" id="admin-form">
+                        <label>
+                            Usuário
+                            <input type="text" name="username" required>
+                        </label>
+                        <label>
+                            Senha
+                            <input type="password" name="password" required>
+                        </label>
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-logo">
+                <img src="Elements - AWS Club/AWS_logo_RGB_WHT.png" alt="ClubAWS">
+            </div>
         </div>
-    </section>
-
-    <footer id="faq">
-        <p>&copy; 2025 AWS Cloud Club</p>
-        <p>Desenvolvido por Ricardo Neres & Pedro Cardoso</p>
-
-        <div class="icon-AWS">
-            <a>
-                <img src="Elements - AWS Club/AWS_logo_RGB_WHT.png" alt="icon-AWS">
-            </a>
-        </div>
-
-        <button class="footer-inicio">
-            <span>Inicio</span>
-        </button>
-
-        <button class="footer-eventos">
-            <span>Eventos</span>
-        </button>
-
-        <button class="">
-            <span>Fotos</span>
-        </button>
-
-        <button>
-            <span>Feedback</span>
-        </button>
-
-        <button>
-            <span>Organizadores</span>
-        </button>
     </footer>
 
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
     <script src="script.js"></script>
+    <script src="supabaseClient.js"></script>
+
 </body>
 
 </html>
