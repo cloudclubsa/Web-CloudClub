@@ -1,20 +1,12 @@
-/* ===============================================
-   Modern CSS Reset
-   Based on 2025 best practices
-=============================================== */
-
-/* 1. Box-sizing intuitivo */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
-/* 2. Remove margin e padding padrão */
 * {
   margin: 0;
   padding: 0;
 }
 
-/* 3. Configurações básicas do body */
 body {
   min-height: 100vh;
   line-height: 1.5;
@@ -22,23 +14,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 4. Remove estilos de lista */
 ul[role='list'], 
 ol[role='list'] {
   list-style: none;
 }
 
-/* 5. Line-height menor para headings e elementos interativos */
 h1, h2, h3, h4, button, input, label {
   line-height: 1.1;
 }
 
-/* 6. Balanceamento de texto em headings */
 h1, h2, h3, h4 {
   text-wrap: balance;
 }
 
-/* 7. Melhora renderização e quebra de texto */
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
@@ -47,45 +35,37 @@ p {
   text-wrap: pretty;
 }
 
-/* 8. Links sem classe mantêm estilos padrão melhorados */
 a:not([class]) {
   text-decoration-skip-ink: auto;
   color: currentColor;
 }
 
-/* 9. Imagens e mídia responsivas */
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
 
-/* 10. Herda fontes para inputs e buttons */
 input, button, textarea, select {
   font: inherit;
 }
 
-/* 11. Textareas sem rows têm altura mínima */
 textarea:not([rows]) {
   min-height: 10em;
 }
 
-/* 12. Scroll margin para elementos com âncora */
 :target {
   scroll-margin-block: 5ex;
 }
 
-/* 13. Contexto de empilhamento raiz */
 #root, #__next {
   isolation: isolate;
 }
 
-/* 14. Display block para elementos HTML5 (browsers antigos) */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* 15. Remove quotes de blockquotes */
 blockquote, q {
   quotes: none;
 }
@@ -96,13 +76,11 @@ q:before, q:after {
   content: none;
 }
 
-/* 16. Border collapse em tabelas */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* 17. Gerenciamento de foco para acessibilidade */
 :focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
@@ -112,7 +90,6 @@ table {
   outline: none;
 }
 
-/* 18. Animações para quem não desabilitou movimento */
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
