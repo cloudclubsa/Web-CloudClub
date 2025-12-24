@@ -1,14 +1,14 @@
-const sb = window.supabaseClient;
-
 document.addEventListener('DOMContentLoaded', () => {
     initAdminModal();
     carregarEventos();
+    initFaq();
 });
 
 async function carregarEventos() {
     const grid = document.getElementById('events-grid');
     if (!grid) return;
 
+    const sb = window.supabaseClient;
     const { data, error } = await sb
         .from('events')
         .select('*')
@@ -78,13 +78,16 @@ function initAdminModal() {
     });
 
 
-    loginForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Login de admin ainda não conectado ao backend.');
-    });
+    if (loginForm) {
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Login de admin ainda não conectado ao backend.');
+        });
+    }
 
 
-    newEventForm.addEventListener('submit', async (e) => {
+    if (newEventForm) {
+        newEventForm.addEventListener('submit', async (e) => {
         e.preventDefault();
 
         const formData = new FormData(newEventForm);
@@ -99,6 +102,7 @@ function initAdminModal() {
             banner_url: formData.get('banner_url'),
         };
 
+        const sb = window.supabaseClient;
         const { data, error } = await sb
             .from('events')
             .insert([evento]);
@@ -111,7 +115,40 @@ function initAdminModal() {
 
         newEventForm.reset();
         alert('Evento criado com sucesso!');
-
-    });
+        });
+    }
 }
 
+function initFaq() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach((item) => {
+        const question = item.querySelector('.faq-question');
+        
+        if (!question) {
+            return;
+        }
+        
+        question.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Fecha todos os outros itens abertos (opcional, para efeito acordeão único)
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item && otherItem.classList.contains('active')) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = null;
+                }
+            });
+
+            // Alterna o estado do item atual
+            item.classList.toggle('active');
+            const answer = item.querySelector('.faq-answer');
+            
+            if (item.classList.contains('active')) {
+                answer.style.maxHeight = answer.scrollHeight + "px";
+            } else {
+                answer.style.maxHeight = null;
+            }
+        });
+    });
+}
