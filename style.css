@@ -464,6 +464,33 @@ body {
   line-height: 1.4;
 }
 
+.linkedin-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin: 0 auto 0;
+  padding: 6px 10px;
+  border-radius: 12px;
+  /* background: rgba(0, 119, 181, 0.15); */
+  text-decoration: none;
+  color: #0077b5;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.linkedin-link:hover {
+  background: rgba(0, 119, 181, 0.25);
+  color: #0a66c2;
+  transform: translateY(-1px);
+}
+
+.linkedin-icon {
+  width: 16px;
+  height: 16px;
+}
+
 .dot:hover {
   background-color: #b0b0b0;
 }
