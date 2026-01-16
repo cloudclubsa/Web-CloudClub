@@ -49,7 +49,7 @@ function initEventDetailsModal() {
             title: 'Conhecendo AWS #1',
             location: 'Hub Goiás — Miniauditório (2º andar)',
             time: '19h30 às 22h · Presencial + online',
-            description: `<p>Conhecendo AWS #1 é o primeiro encontro da nossa comunidade e foi pensado para mostrar, na prática, como a nuvem é usada em ambientes reais — do código à infraestrutura. Se você está começando em cloud ou quer evoluir para o próximo nível na carreira em tecnologia, este evento é para você.</p>
+            description: `<p>Conhecendo AWS Cloud Club #1 é o primeiro encontro da nossa comunidade e foi pensado para mostrar, na prática, como a nuvem é usada em ambientes reais — do código à infraestrutura. Se você está começando em cloud ou quer evoluir para o próximo nível na carreira em tecnologia, este evento é para você.</p>
 
 <p><strong>O que você vai ver:</strong></p>
 <ul>
