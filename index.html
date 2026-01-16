@@ -22,6 +22,11 @@
             <div class="logo">
                 <img src="Elements - AWS Club/LogoClub_RGB_WHT-removebg-preview.png" alt="AWS Cloud Club" />
             </div>
+            <button class="menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav class="menu-navbar">
                 <ul>
                     <li><a href="#inicio">Início</a></li>
@@ -101,7 +106,10 @@
                             <p>Hub Goiás — Miniauditório (2º andar)</p>
                             <p>19h30 às 22h · Presencial + online</p>
                             <p>Evento para estudantes (leia a descrição)</p>
-                            <a target="_blank" href="https://www.sympla.com.br/evento/aws-cloud-club-sa-conhecendo-aws-cloud-club-1/3276397?share_id=copiarlink" class="event-cta">Inscrever-se</a>
+                            <div class="event-actions">
+                                <button class="event-details-btn" data-event-id="1">Detalhes</button>
+                                <a target="_blank" href="https://www.sympla.com.br/evento/aws-cloud-club-sa-conhecendo-aws-cloud-club-1/3276397?share_id=copiarlink" class="event-cta">Inscrever-se</a>
+                            </div>
                         </div>
                     </article>
 
@@ -124,7 +132,7 @@
                             <div class="card-info">
                                 <h3>Ricardo Neres</h3>
                                 <span class="role-club">Capitão / Líder</span>
-                                <span class="role-pro">Software Engineer Kotlin &amp; Java<br />@Irly</span>
+                                <span class="role-pro">Software Engineer Kotlin &amp; Java<br /></span>
                                 <a href="https://www.linkedin.com/in/9neres/" target="_blank" rel="noopener noreferrer" class="linkedin-link">
                                     <img src="https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8" alt="LinkedIn" class="linkedin-icon" />
                                     <span>9Neres</span>
@@ -260,6 +268,39 @@
         </section>
     </main>
 
+    <!-- Modal de Detalhes do Evento -->
+    <div id="event-details-modal" class="event-modal-overlay">
+        <div class="event-modal">
+            <button class="event-modal-close" aria-label="Fechar">&times;</button>
+            <div class="event-modal-content">
+                <div class="event-modal-header">
+                    <div class="event-modal-date">
+                        <span class="event-modal-day"></span>
+                        <span class="event-modal-month"></span>
+                    </div>
+                    <h2 class="event-modal-title"></h2>
+                </div>
+                <div class="event-modal-body">
+                    <div class="event-modal-info-item">
+                        <strong>📍 Local:</strong>
+                        <p class="event-modal-location"></p>
+                    </div>
+                    <div class="event-modal-info-item">
+                        <strong>🕐 Horário:</strong>
+                        <p class="event-modal-time"></p>
+                    </div>
+                    <div class="event-modal-info-item">
+                        <strong>ℹ️ Descrição:</strong>
+                        <p class="event-modal-description"></p>
+                    </div>
+                </div>
+                <div class="event-modal-footer">
+                    <a href="#" target="_blank" class="event-modal-cta">Inscrever-se</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="site-footer">
         <div class="container footer-grid">
             <div class="footer-info">
@@ -276,33 +317,15 @@
 
 
 
-            <!-- <div id="admin-modal" class="modal-overlay">
-                <div class="modal">
-                    <button class="modal-close" id="close-modal">&times;</button>
-                    <h2>Área do organizador</h2>
-                    <form class="admin-form" id="admin-form">
-                        <label>
-                            Usuário
-                            <input type="text" name="username" required>
-                        </label>
-                        <label>
-                            Senha
-                            <input type="password" name="password" required>
-                        </label>
-                        <button type="submit">Entrar</button>
-                    </form>
-                </div>
-            </div> -->
 
-            <div class="footer-logo">
-                <img src="Elements - AWS Club/AWS_logo_RGB_WHT.png" alt="ClubAWS">
+            <div class="footer-logos">
+                <img src="Elements - AWS Club/Cloud_Club.png" alt="Cloud Club" class="footer-cloud-logo">
+                <img src="Elements - AWS Club/AWS_logo_RGB_WHT.png" alt="AWS" class="footer-aws-logo">
             </div>
         </div>
     </footer>
 
-    <!-- <script src="https://unpkg.com/@supabase/supabase-js@2"></script> -->
     <script src="script.js"></script>
-    <!-- <script src="supabaseClient.js"></script> -->
 
 </body>
 
